@@ -11,33 +11,45 @@ header{
     padding-bottom: 10px;
 }
 
+div.Encabezado{
+    padding: 5%;
+    
+}
+
 .encabezado-logo{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.barra_buscadora{
+    display: flex;
+    width: 90%;
+    margin-top: 25px;
+
+}
+
+.logo {
+    width: 80%;
+    height: 70px;
 }
 
 header nav{
     display: none;
 }
 
-.logo {
-    width: 50%;
-    height: 70px;
-}
+header nav ul a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
 
-.barra_buscadora{
-    margin-left: 15px;
 }
-
 
 .ventas_credito{
     text-align: center;
     margin-top: 15px;
-}
-
-.cuenta{
-    padding-top: 25px;
 }
 
 div.burger-menu{
@@ -58,6 +70,13 @@ div.burger-menu{
     padding: 5 5;
 }
 
+/* Main */
+
+main{
+    width: 100%; 
+    background-color: #ebebeb;
+
+}
 /*   Div Banner */
 
 .banner img {
@@ -65,12 +84,8 @@ div.burger-menu{
     margin: 0 auto;
 }
 
-/* Main */
-
-main{
-    width: 100%; 
-    background-color: #ebebeb;
-
+main h3{
+    display: none;
 }
 
 main article{
@@ -184,6 +199,14 @@ footer article div {
 /*-------- MEDIA-QUERYS --------- */
 
 @media (min-width: 361px){
+
+/*---------- Header ------------- */
+
+    .encabezado-logo{
+    display: flex;
+    padding: 10px 20px;
+}
+
     .burger-menu {
         display: block;
     }
@@ -193,6 +216,18 @@ footer article div {
         display: none; 
     }
 
+    .barra_buscadora input{
+        width: 80%;
+        margin-left: 50px;
+    }
+/* ---------Main section--------*/
+
+    main h3{
+        display: block;
+        padding-top: 10px;
+        text-align: left;
+        padding-left: 35px;
+    }
 
     main section article{
         width: 47%;
@@ -238,29 +273,57 @@ footer article div {
 }
 
 @media (min-width: 769px){
+
+/*---------- Header ------------- */
+
+    .Encabezado{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .ventas_credito{
+        max-width: 250px;
+        font-size: 20px;
+        margin-top: 26px;
+        text-align: right;
+    }
+
     .burger-menu {
         display: none;
     }
 
     header nav{
-        display: block;
+        display: flex;
+        justify-content: space-between;
         text-decoration: none;
-        
+        margin: 5px 20px;
+        }
+
+    nav ul{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
+
+    nav ul li{
+        margin: 0 5px;
+    }
+
+/* ---------Main section--------*/
 
     main section article{
         width: 23%;
     } 
 
-    main section div.productos{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-
 }
 
-@media (min-width: 1280px){
+@media (min-width: 1024px){
+
+    .pie-pagina{
+        display: flex;
+        justify-content: space-around;
+    }
 
 }
