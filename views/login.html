@@ -5,29 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5ad1c2ea7f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/loginstyle.css">
 </head>
 <body>
 
+    <header>
+        <div class="Encabezado">
+            <div class="encabezado-logo">
+                <div>
+                    <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre">
+                </div>
+                <div class="barra_buscadora">
+                    <input type="text" placeholder=" Buscar productos, marcas ">
+                    <button>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="ventas_credito">
+                <p> <i class="fas fa-hand-holding-usd"></i> Compre en cuotas y tarjeta de credito </p>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="nav-derecha">
+                <li> <a href="#">Ofertas</a> </li>
+                <li> <a href="#">Tiendas Oficiales</a> </li>
+                <li> <a href="#">Vender</a> </li>
+                <li> <a href="#">Ayuda</a> </li>
+            </ul>
+
+            <ul class="cuenta">
+                <li> <a href="./register">Crea tu Cuenta</a> <i class="far fa-id-card"></i> </li>
+                <li> <a href="./login">Ingresa</a> <i class="fas fa-sign-in-alt"></i> </li>
+                <li> <a href="#">Mis Compras</a> <i class="fas fa-shopping-bag"></i> </li>
+
+
+            </ul>
+        </nav>
+
+        <div class="burger-menu">
+
+            <i class="fas fa-bars"></i>
+
+        </div>
+
+    </header>
+
     <main>
 
-        <form action="">
+        <h2>Ingresa a tu Cuenta</h2>
+        <div>
+            <form action="/" method="post">
 
-            <div class="nombre-usuario">
-                <label for="nombre-usuario"></label>
-                <input class="grande" type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Usuario" required >
-            </div>
+                <div class="nombre-usuario">
+                    <label for="nombre-usuario"></label>
+                    <input class="grande" type="text" name="nombre-usuario" id="nombre-usuario" placeholder="Usuario" required >
+                </div>
 
-            <div class="password">
-                <label for="password"></label>
-                <input class="grande" type="password" name="password" id="password" placeholder="Contraseña">
-            </div>
+                <div class="password">
+                    <label for="password"></label>
+                    <input class="grande" type="password" name="password" id="password" placeholder="Contraseña">
+                </div>
 
-            <div class="botones">
-                <button type="submit"> Enviar</button>
-                <button type="reset"> Borrar</button>
+                <div class="botones">
+                    <button class="login-boron" type="submit"> Enviar</button>
 
+            </form>
 
-        </form>
+        </div>
 
           <footer>
 

@@ -137,6 +137,11 @@ form button{
     width: 40%;
 }
 
+.login-boron:hover {
+    background-color: #0022AA;
+    color: white;
+}
+
 /* Footer*/
 
 footer {

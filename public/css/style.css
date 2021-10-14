@@ -26,12 +26,18 @@ div.Encabezado{
     display: flex;
     width: 90%;
     margin-top: 25px;
+    justify-content: space-evenly;
 
 }
 
+.barra_buscadora input{
+    border-radius: 5px;
+    font-size: 25px;
+    height: 65px;
+}
+
 .logo {
-    width: 80%;
-    height: 70px;
+    height: 115px;
 }
 
 header nav{
@@ -152,6 +158,8 @@ main .descripcion{
 main .descuento{
     font-size: 16px;
     color: #39b54a;
+    position: absolute;
+    left: 110px;
 }
 
 i.fa-truck{
@@ -168,6 +176,7 @@ i.fa-truck{
     right: 20px;
     top: -15px;
 }
+
 
 
 
@@ -231,7 +240,13 @@ footer article div {
 
     main section article{
         width: 47%;
+        transition: all 450ms;
     }   
+
+    main section article:hover {
+        box-shadow: 5px 10px rgb(145, 145, 145);
+    }
+    
 
     main section div.productos{
         display: flex;
@@ -267,7 +282,14 @@ footer article div {
     .descripcion {
         display: block;
         margin-top: 30px;
+        transition: all 450ms;
+        visibility: hidden;
     }
+
+    article:hover .articulo-principal .descripcion {
+        visibility: visible;
+    }
+   
 
 
 }
@@ -320,6 +342,10 @@ footer article div {
 }
 
 @media (min-width: 1024px){
+
+    article:hover .articulo-principal i.fa-truck {
+        transform: rotate(-90deg);
+    }
 
     .pie-pagina{
         display: flex;
