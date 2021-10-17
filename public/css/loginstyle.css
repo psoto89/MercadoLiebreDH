@@ -1,91 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box
-}
-/* Header*/
-
-header{
-    background-color: #EAC926;
-    padding-bottom: 10px;
-}
-
-div.Encabezado{
-    padding: 5%;
-    
-}
-
-.encabezado-logo{
-    display: flex;
-    padding: 10px 20px;
-    width: 100%;
-}
-
-.barra_buscadora{
-    display: flex;
-    width: 90%;
-    margin-top: 25px;
-
-}
-
-.logo {
-    width: 80%;
-    height: 70px;
-}
-
-header nav{
-    display: none;
-}
-
-header nav ul a{
-    text-decoration: none;
-    color: #222222;
-    display: inline-block;
-    padding: 5px 0;
-    font-size: 17px;
-
-}
-
-.ventas_credito{
-    text-align: center;
-    margin-top: 15px;
-}
-
-div.burger-menu{
-    text-align: center;
-}
-
-.burger-menu{
-    background-color:#1259c3;;
-    width: 15%;
-    padding: 10px;
-    border-radius: 3px;
-    margin: 0 auto;
-    margin-top: 10px;
-    
-}
-.fa-bars{
-    color: #ffffff;
-    padding: 5 5;
-}
-
 /* Main */
 
 h2{
     text-align: center;
     font-size: 25px;
     color: rgb(0, 17, 70);
-    margin: 15px auto;
+    margin: 0 auto;
+    padding: 25px;
 }
 
-div form{
-    text-align: center;
+div.formulario{
+    text-align: left;
     padding: 30px;
     background-color: rgb(209, 209, 209);
     margin: auto 10px;
     border-radius: 15px;
     border: none;
+    margin-bottom: 25px;
 
 
 }
@@ -119,10 +49,15 @@ div.fecha-nacimiento label{
 
 label{
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 500;
 }
-.perfil-usuario div{
-    display: flex;
+
+.perfil-usuario input{
+    width: 5%; 
+}
+
+.categoria-interes input{
+    width: 5%; 
 }
 
 form button{
@@ -142,58 +77,32 @@ form button{
     color: white;
 }
 
-/* Footer*/
-
-footer {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 30px 0;
-    width: 90%;
-    margin: 0 auto;
-}
-
-i.fa-credit-card, i.fa-gift, i.fa-user-shield {
-    color: #1259c3;
-    font-size: 22px;
-    cursor: pointer;
-}
-
-footer article {
-    margin: 40px 0;
-    color: #666;
-}
-
-footer article div {
-    margin-bottom: 9px;
-}
-
-
-
-
-
-
 /* ----- Media Querys-------*/
 
-@media (min-width: 361px){
+@media(min-width:800px){
+    form div {
+        text-align: center;
+    }
 
-    /*---------- Header ------------- */
-    
-        .encabezado-logo{
+    .perfil-usuario{
         display: flex;
-        padding: 10px 20px;
-        }
+        margin: 10px 57px;
+    }
+
+    .categoria-interes{
+        display: flex;
+        margin: 10px 57px;
+    }
+}
+
+
     
-        .burger-menu {
-            display: block;
-        }
         
     
-        header nav {
-            display: none; 
-        }
+       
+        
     
-        .barra_buscadora input{
-            width: 80%;
-            margin-left: 50px;
-        }
-    }
+
+
+
+    

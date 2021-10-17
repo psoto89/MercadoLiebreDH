@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5ad1c2ea7f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/loginstyle.css">
+    <link rel="stylesheet" href="/css/style.css">
 
 </head>
 <body>
@@ -17,11 +18,13 @@
                 <div>
                     <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Imagen de Mercado Liebre">
                 </div>
-                <div class="barra_buscadora">
-                    <input type="text" placeholder=" Buscar productos, marcas ">
-                    <button>
-                        <i class="fas fa-search"></i>
-                    </button>
+                <div class="form" action="#" method="GET">
+                    <div class="input">
+                        <input type="text" name="searchbar" placeholder="Qué estás buscando?">
+                        <div class="lupa">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="ventas_credito">
@@ -51,14 +54,13 @@
             <i class="fas fa-bars"></i>
 
         </div>
-
     </header>
 
     <main>
 
         <h2>Crea tu Cuenta</h2>
 
-        <div class="form">
+        <div class="formulario">
 
             <form action="/register" method="post">
 
@@ -87,6 +89,7 @@
                     <br>
                     <input type="radio" name="perfil-usuario" value="Comprar">
                     <label>Comprar</label>
+                    <br>
                     <input type="radio" name="perfil-usuario" value="Vender">
                     <label>Vender</label>
                     

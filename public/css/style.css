@@ -18,26 +18,45 @@ div.Encabezado{
 
 .encabezado-logo{
     display: flex;
-    padding: 10px 20px;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.barra_buscadora{
+div.form {
     display: flex;
-    width: 90%;
-    margin-top: 25px;
-    justify-content: space-evenly;
-
-}
-
-.barra_buscadora input{
+    justify-content: space-between;
+    padding: 10px 5px;
+    width: 70%;
+    background-color: #ffffff;
     border-radius: 5px;
-    font-size: 25px;
-    height: 65px;
+    color: #666;
 }
+
+div.input {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+div.input input {
+    border: none;
+    width: 75%;
+}
+
+div.input button {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+div.lupa i {
+    font-size: 17px;
+    width: 25%;
+}
+
 
 .logo {
-    height: 115px;
+    width: 90%;
 }
 
 header nav{
@@ -125,6 +144,7 @@ main img{
 }
 
 main h3 {
+    display: block;
     font-size: 24px;
     font-weight: normal;
     text-align: center;
@@ -197,7 +217,7 @@ i.fa-credit-card, i.fa-gift, i.fa-user-shield {
 }
 
 footer article {
-    margin: 40px 0;
+    margin: 40px 18px;
     color: #666;
 }
 
@@ -214,6 +234,7 @@ footer article div {
     .encabezado-logo{
     display: flex;
     padding: 10px 20px;
+    width: 100%;
 }
 
     .burger-menu {
@@ -231,15 +252,8 @@ footer article div {
     }
 /* ---------Main section--------*/
 
-    main h3{
-        display: block;
-        padding-top: 10px;
-        text-align: left;
-        padding-left: 35px;
-    }
 
     main section article{
-        width: 47%;
         transition: all 450ms;
     }   
 
@@ -335,17 +349,13 @@ footer article div {
 
 /* ---------Main section--------*/
 
-    main section article{
-        width: 23%;
-    } 
+    article:hover .articulo-principal i.fa-truck {
+        transform: rotate(-90deg);
+    }
 
 }
 
 @media (min-width: 1024px){
-
-    article:hover .articulo-principal i.fa-truck {
-        transform: rotate(-90deg);
-    }
 
     .pie-pagina{
         display: flex;
