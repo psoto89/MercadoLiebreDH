@@ -350,9 +350,16 @@ footer article div {
 
 /* ---------Main section--------*/
 
+    main section article{
+    width: 24%;
+    margin: 10px;
+    }
+
     article:hover .articulo-principal i.fa-truck {
         transform: rotate(-90deg);
     }
+
+    
 
 }
 
