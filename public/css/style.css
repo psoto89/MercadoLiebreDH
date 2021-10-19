@@ -254,6 +254,7 @@ footer article div {
 
 
     main section article{
+        width: 45%;
         transition: all 450ms;
     }   
 
