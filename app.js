@@ -19,4 +19,6 @@ app.get('/login', (req, res) => {
 });
 
 
-app.listen(PUERTO, () => console.log("Servidor esta corriendo sin problemas"));
+app.listen(process.env.PORT || PUERTO, function(){
+    console.log('Servidor Corriendo en el puerto 3030')
+});
